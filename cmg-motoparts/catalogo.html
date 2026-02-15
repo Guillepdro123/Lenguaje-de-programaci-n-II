@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMG MotoParts - Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado / Barra de Navegación -->
+    <header class="barra-navegacion">
+        <div class="contenedor">
+            <div class="contenido-nav">
+                <div class="logo">
+                    <div class="icono-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M16 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+                            <path d="M13 6h2l1.5 3l2 4" />
+                        </svg>
+                    </div>
+                    <span class="texto-logo">CMG <strong>MOTOPARTS</strong></span>
+                </div>
+                <nav class="enlaces-nav">
+                    <a href="index.html">INICIO</a>
+                    <a href="catalogo.html" class="activo">CATÁLOGO</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </nav>
+                <div class="nav-derecha">
+                    <div class="caja-busqueda">
+                        <input type="text" placeholder="Buscar por nombre o SKU...">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <div class="icono-carrito">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                        <span class="insignia-carrito">3</span>
+                    </div>
+                    <div class="icono-usuario">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Encabezado Catálogo -->
+    <section class="encabezado-catalogo">
+        <div class="contenedor">
+            <div class="ruta-navegacion">
+                <a href="index.html">TIENDA</a>
+                <span>/</span>
+                <span>REPUESTOS DE MOTOR</span>
+            </div>
+            <h1 class="titulo-catalogo">
+                CATÁLOGO DE <span class="destacado">REPUESTOS</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Contenido Catálogo -->
+    <section class="contenido-catalogo">
+        <div class="contenedor">
+            <div class="disposicion-catalogo">
+                <!-- Barra Lateral -->
+                <aside class="barra-lateral-catalogo">
+                    <h3 class="titulo-barra-lateral">CATEGORÍAS</h3>
+                    <ul class="lista-categorias">
+                        <li class="item-categoria activo">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v10m9-9h-6m-6 0H3"/>
+                            </svg>
+                            <span>Motor</span>
+                        </li>
+                        <li class="item-categoria">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Frenos</span>
+                        </li>
+                        <li class="item-categoria">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                            </svg>
+                            <span>Transmisión</span>
+                        </li>
+                        <li class="item-categoria">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Iluminación</span>
+                        </li>
+                        <li class="item-categoria">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect width="20" height="20" x="2" y="2" rx="2"/>
+                            </svg>
+                            <span>Neumáticos</span>
+                        </li>
+                        <li class="item-categoria">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 7h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v3H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                            </svg>
+                            <span>Accesorios</span>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Contenido Principal -->
+                <div class="principal-catalogo">
+                    <div class="controles-catalogo">
+                        <button class="boton-filtro">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="4" y1="6" x2="20" y2="6"/>
+                                <line x1="4" y1="12" x2="20" y2="12"/>
+                                <line x1="4" y1="18" x2="20" y2="18"/>
+                            </svg>
+                            Filtros Avanzados
+                        </button>
+                        <div class="controles-vista">
+                            <select class="selector-ordenar">
+                                <option>Ordenar: Relevancia</option>
+                                <option>Precio: Menor a Mayor</option>
+                                <option>Precio: Mayor a Menor</option>
+                                <option>Más Nuevos</option>
+                            </select>
+                            <div class="alternar-vista">
+                                <button class="boton-vista activo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <rect x="3" y="3" width="7" height="7"/>
+                                        <rect x="14" y="3" width="7" height="7"/>
+                                        <rect x="3" y="14" width="7" height="7"/>
+                                        <rect x="14" y="14" width="7" height="7"/>
+                                    </svg>
+                                </button>
+                                <button class="boton-vista">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="8" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="8" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="8" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="3" y1="6" x2="3.01" y2="6" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="3" y1="12" x2="3.01" y2="12" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="3" y1="18" x2="3.01" y2="18" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cuadrícula Productos -->
+                    <div class="cuadricula-productos">
+                        <!-- Producto 1 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <div class="insignia-producto-premium">PREMIUM</div>
+                            <img src="img/pastillas-freno.jpg" alt="Pastillas de Freno" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">FRENOS / SKU: BRK-001</p>
+                                <h3 class="nombre-producto">Pastillas de Freno Cerámicas</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$45.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <div class="insignia-producto-nuevo">NOVEDAD</div>
+                            <img src="img/kit-arrastre.jpg" alt="Kit de Arrastre" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">TRANSMISIÓN / SKU: KIT-520</p>
+                                <h3 class="nombre-producto">Kit de Arrastre Racing 520</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$120.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <img src="img/filtro-aceite.jpg" alt="Filtro de Aceite" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">MOTOR / SKU: FLT-OIL</p>
+                                <h3 class="nombre-producto">Filtro de Aceite Pro Synthetic</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$25.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <img src="img/bujia-ngk.jpg" alt="Bujía NGK" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">ENCENDIDO / SKU: NGK-IR9</p>
+                                <h3 class="nombre-producto">Bujía de Iridio NGK</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$18.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 5 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <img src="img/cadena-reforzada.jpg" alt="Cadena Reforzada" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">TRANSMISIÓN / SKU: CHN-520</p>
+                                <h3 class="nombre-producto">Cadena Reforzada 520 Gold</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$85.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <img src="img/kit-juntas.jpg" alt="Kit de Juntas" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">MOTOR / SKU: GSK-ENG</p>
+                                <h3 class="nombre-producto">Kit de Juntas Motor Completo</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$65.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 7 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <img src="img/disco-freno.jpg" alt="Disco de Freno" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">FRENOS / SKU: DSC-FRT</p>
+                                <h3 class="nombre-producto">Disco de Freno Delantero</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$110.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 8 -->
+                        <div class="tarjeta-producto-catalogo">
+                            <img src="img/amortiguador.jpg" alt="Amortiguador" class="imagen-producto">
+                            <div class="detalles-producto">
+                                <p class="categoria-producto">CHASIS / SKU: SHK-RR</p>
+                                <h3 class="nombre-producto">Amortiguador Trasero de Gas</h3>
+                                <div class="pie-producto">
+                                    <p class="precio-producto">$240.000</p>
+                                    <button class="boton-agregar-carrito">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="9" cy="21" r="1"/>
+                                            <circle cx="20" cy="21" r="1"/>
+                                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paginación -->
+                    <div class="paginacion">
+                        <button class="boton-pagina">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="boton-pagina activo">1</button>
+                        <button class="boton-pagina">2</button>
+                        <button class="boton-pagina">3</button>
+                        <span class="puntos-pagina">...</span>
+                        <button class="boton-pagina">12</button>
+                        <button class="boton-pagina">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="contenido-pie">
+                <div class="seccion-pie">
+                    <div class="logo-pie">
+                        <div class="icono-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+                                <path d="M13 6h2l1.5 3l2 4" />
+                            </svg>
+                        </div>
+                        <span class="texto-logo-pie">CMG <strong>MOTOPARTS</strong></span>
+                    </div>
+                    <p class="descripcion-pie">
+                        Expertos en repuestos de alta calidad para todo tipo de motocicletas. 
+                        Tu motor en manos de profesionales.
+                    </p>
+                    <div class="iconos-sociales">
+                        <a href="#" class="icono-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="icono-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="icono-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect width="20" height="20" x="2" y="2" rx="5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="seccion-pie">
+                    <h4 class="encabezado-pie">NAVEGACIÓN</h4>
+                    <ul class="enlaces-pie">
+                        <li><a href="catalogo.html">Catálogo Completo</a></li>
+                        <li><a href="#">Novedades del Mes</a></li>
+                        <li><a href="#">Promociones Especiales</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="seccion-pie">
+                    <h4 class="encabezado-pie">SOPORTE</h4>
+                    <ul class="enlaces-pie">
+                        <li><a href="#">Guía de Compra</a></li>
+                        <li><a href="#">Envíos y Seguimiento</a></li>
+                        <li><a href="#">Políticas de Devolución</a></li>
+                        <li><a href="#">Garantía de Piezas</a></li>
+                    </ul>
+                </div>
+
+                <div class="seccion-pie">
+                    <h4 class="encabezado-pie">SUSCRÍBETE</h4>
+                    <p class="texto-boletin-pie">
+                        Recibe las últimas ofertas y guías de mantenimiento.
+                    </p>
+                    <div class="formulario-boletin">
+                        <input type="email" placeholder="Email" class="input-boletin">
+                        <button class="boton-boletin">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pie-inferior">
+                <p>© 2026 CMG MOTOPARTS. TODOS LOS DERECHOS RESERVADOS.</p>
+                <div class="iconos-pago">
+                    <div class="icono-pago">💳</div>
+                    <div class="icono-pago">💰</div>
+                    <div class="icono-pago">🏛️</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

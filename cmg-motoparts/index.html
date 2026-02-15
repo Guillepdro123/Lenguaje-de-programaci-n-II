@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMG MotoParts - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado / Barra de Navegación -->
+    <header class="barra-navegacion">
+        <div class="contenedor">
+            <div class="contenido-nav">
+                <div class="logo">
+                    <div class="icono-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M16 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+                            <path d="M13 6h2l1.5 3l2 4" />
+                        </svg>
+                    </div>
+                    <span class="texto-logo">CMG <strong>MOTOPARTS</strong></span>
+                </div>
+                <nav class="enlaces-nav">
+                    <a href="index.html" class="activo">INICIO</a>
+                    <a href="catalogo.html">CATÁLOGO</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </nav>
+                <div class="nav-derecha">
+                    <div class="caja-busqueda">
+                        <input type="text" placeholder="Buscar repuesto...">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <div class="icono-usuario">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="contenedor">
+            <div class="contenido-hero">
+                <div class="hero-izquierda">
+                    <div class="insignia-calidad">
+                        <span class="icono-insignia">✓</span>
+                        <span>CALIDAD MECÁNICA GARANTIZADA</span>
+                    </div>
+                    <h1 class="titulo-hero">
+                        Potencia y<br>
+                        <span class="destacado">Rendimiento</span><br>
+                        para tu Moto
+                    </h1>
+                    <p class="descripcion-hero">
+                        Los mejores repuestos y accesorios mecánicos con calidad 
+                        garantizada. Especialistas en marcas de alto desempeño y 
+                        mantenimiento profesional.
+                    </p>
+                    <div class="botones-hero">
+                        <a href="catalogo.html" class="boton boton-primario">
+                            EXPLORAR CATÁLOGO
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#info" class="boton boton-secundario">SABER MÁS</a>
+                    </div>
+                </div>
+                <div class="hero-derecha">
+                    <div class="tarjeta-producto">
+                        <img src="img/motor-hero.jpg" alt="Motor de motocicleta" class="imagen-producto">
+                        <div class="info-producto">
+                            <div class="insignia-producto">NUEVO LANZAMIENTO</div>
+                            <h3 class="titulo-producto">KIT RACING PRO 2026</h3>
+                            <div class="logo-producto">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="white">
+                                    <path d="M10 15h8l4-4 4 4h8l-4 10h-16z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Características -->
+    <section class="caracteristicas" id="info">
+        <div class="contenedor">
+            <div class="cuadricula-caracteristicas">
+                <div class="tarjeta-caracteristica">
+                    <div class="icono-caracteristica">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="titulo-caracteristica">CALIDAD PREMIUM</h3>
+                    <p class="descripcion-caracteristica">
+                        Repuestos originales y certificados bajo estándares internacionales de seguridad.
+                    </p>
+                </div>
+
+                <div class="tarjeta-caracteristica">
+                    <div class="icono-caracteristica">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="titulo-caracteristica">ENVÍO RÁPIDO</h3>
+                    <p class="descripcion-caracteristica">
+                        Entrega garantizada en todo el país con seguimiento en tiempo real de tu pedido.
+                    </p>
+                </div>
+
+                <div class="tarjeta-caracteristica">
+                    <div class="icono-caracteristica">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="titulo-caracteristica">SOPORTE TÉCNICO</h3>
+                    <p class="descripcion-caracteristica">
+                        Asesoría especializada por mecánicos expertos en marcas japonesas y europeas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="contenido-pie">
+                <div class="seccion-pie">
+                    <div class="logo-pie">
+                        <div class="icono-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+                                <path d="M13 6h2l1.5 3l2 4" />
+                            </svg>
+                        </div>
+                        <span class="texto-logo-pie">CMG <strong>MOTOPARTS</strong></span>
+                    </div>
+                    <p class="descripcion-pie">
+                        Expertos en rendimiento y seguridad para motociclistas de 
+                        alto nivel. Pasión por la mecánica y compromiso con la calidad.
+                    </p>
+                    <div class="iconos-sociales">
+                        <a href="#" class="icono-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="icono-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="icono-social">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect width="20" height="20" x="2" y="2" rx="5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="seccion-pie">
+                    <h4 class="encabezado-pie">EMPRESA</h4>
+                    <ul class="enlaces-pie">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Trayectoria</a></li>
+                        <li><a href="#">Blog Mecánico</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="seccion-pie">
+                    <h4 class="encabezado-pie">CATEGORÍAS</h4>
+                    <ul class="enlaces-pie">
+                        <li><a href="catalogo.html">Motores y Transmisión</a></li>
+                        <li><a href="catalogo.html">Sistemas de Frenado</a></li>
+                        <li><a href="catalogo.html">Electrónica y Luces</a></li>
+                        <li><a href="catalogo.html">Accesorios Racing</a></li>
+                    </ul>
+                </div>
+
+                <div class="seccion-pie">
+                    <h4 class="encabezado-pie">SUSCRÍBETE</h4>
+                    <p class="texto-boletin-pie">
+                        Recibe ofertas exclusivas y consejos técnicos.
+                    </p>
+                    <div class="formulario-boletin">
+                        <input type="email" placeholder="Tu email" class="input-boletin">
+                        <button class="boton-boletin">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pie-inferior">
+                <p>© 2026 CMG MotoParts. Todos los derechos reservados. Diseñado para entusiastas.</p>
+                <div class="iconos-pago">
+                    <div class="icono-pago">💳</div>
+                    <div class="icono-pago">💰</div>
+                    <div class="icono-pago">🏛️</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
