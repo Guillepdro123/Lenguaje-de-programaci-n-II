@@ -134,7 +134,7 @@ El sitio está publicado y accesible en:
 - Mario Aleman Salgado
 
 **Institución:** Uniremington  
-**Materia:** Lenguaje de Programción II
+**Materia:** Lenguaje de Programación II
 **Fecha:** Febrero 2026
 
 ## 📞 Información de Contacto (CMG MotoParts)
