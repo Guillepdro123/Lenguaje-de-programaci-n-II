@@ -209,7 +209,7 @@ El archivo `styles.css` está organizado en secciones:
 El sitio está publicado y accesible en:
 
 **URL:** https://cmg-motoparts.netlify.app/
-**Link video explicacion:** https://youtu.be/Nd0jih644CM
+**Link video explicacion:** https://youtu.be/_bOf8RfANiA
 
 ## 👥 Equipo de Desarrollo
 
