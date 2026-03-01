@@ -12,13 +12,13 @@ Desarrollar un sitio web profesional que refleje la identidad de una tienda de r
 
 ## 🚀 Características
 
-- ✅ Diseño responsive (adaptable a móviles, tablets y desktop)
-- ✅ Navegación entre 3 páginas principales
-- ✅ Sistema de variables CSS para fácil mantenimiento
-- ✅ Estructura HTML semántica
-- ✅ Paleta de colores profesional
-- ✅ Tipografía Inter (Google Fonts)
-- ✅ Efectos hover y transiciones suaves
+* ✅ Diseño responsive (adaptable a móviles, tablets y desktop)
+* ✅ Navegación entre 3 páginas principales
+* ✅ Sistema de variables CSS para fácil mantenimiento
+* ✅ Estructura HTML semántica
+* ✅ Paleta de colores profesional
+* ✅ Tipografía Inter (Google Fonts)
+* ✅ Efectos hover y transiciones suaves
 
 ## 📁 Estructura del Proyecto
 ```
@@ -30,6 +30,9 @@ cmg-motoparts/
 │
 ├── css/
 │   └── styles.css          # Archivo de estilos principal
+│
+├── js/
+│   └── script.js           # Archivo JavaScript principal
 │
 ├── img/                    # Carpeta de imágenes
 │   ├── motor-hero.jpg      # Imagen principal del hero
@@ -59,98 +62,126 @@ El sitio utiliza un sistema de variables CSS para mantener consistencia visual:
 ```
 
 ### Aplicación de Colores:
-- **Fondo del sitio:** Negro Carbón (#111111)
-- **Tarjetas de productos:** Gris Oscuro (#2B2B2B)
-- **Botones y enlaces activos:** Rojo Racing (#D62828)
-- **Títulos y texto principal:** Blanco (#FFFFFF)
-- **Descripciones y texto secundario:** Gris Claro (#E5E5E5)
+* **Fondo del sitio:** Negro Carbón (#111111)
+* **Tarjetas de productos:** Gris Oscuro (#2B2B2B)
+* **Botones y enlaces activos:** Rojo Racing (#D62828)
+* **Títulos y texto principal:** Blanco (#FFFFFF)
+* **Descripciones y texto secundario:** Gris Claro (#E5E5E5)
 
 ## 🔤 Tipografía
 
 **Fuente principal:** [Inter](https://fonts.google.com/specimen/Inter) (Google Fonts)
 
-- **Títulos (h1-h6):** Inter Bold (700)
-- **Texto normal:** Inter Regular (400)
-- **Botones y enlaces:** Inter SemiBold (600)
+* **Títulos (h1-h6):** Inter Bold (700)
+* **Texto normal:** Inter Regular (400)
+* **Botones y enlaces:** Inter SemiBold (600)
 
 ## 📄 Páginas del Sitio
 
 ### 1. **Inicio (index.html)**
-- Sección hero con propuesta de valor
-- Características principales del servicio
-- Llamados a la acción (CTAs)
-- Footer con información de contacto
+* Sección hero con propuesta de valor
+* Características principales del servicio
+* Llamados a la acción (CTAs)
+* Footer con información de contacto
 
 ### 2. **Catálogo (catalogo.html)**
-- Barra lateral con categorías
-- Cuadrícula de productos (8 productos)
-- Información de cada producto: imagen, categoría, nombre, precio
-- Sistema de paginación
-- Filtros y ordenamiento
+* Barra lateral con categorías
+* Cuadrícula de productos (8 productos)
+* Información de cada producto: imagen, categoría, nombre, precio
+* Sistema de paginación
+* Filtros y ordenamiento
 
 ### 3. **Contacto (contacto.html)**
-- Información de contacto (dirección, teléfono, email)
-- Formulario de contacto
-- Marcador de ubicación
-- Integración visual para comunicación
+* Información de contacto (dirección, teléfono, email)
+* Formulario de contacto
+* Marcador de ubicación
+* Integración visual para comunicación
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5** - Estructura semántica del sitio
-- **CSS3** - Estilos y diseño responsive
-- **Google Fonts** - Tipografía Inter
+* **HTML5** - Estructura semántica del sitio
+* **CSS3** - Estilos y diseño responsive
+* **JavaScript (ES6+)** - Interactividad y funcionalidades dinámicas
+* **Google Fonts** - Tipografía Inter
 
 ## 📱 Responsive Design
 
 El sitio está optimizado para diferentes dispositivos:
 
-- **Desktop:** 1200px+
-- **Tablet:** 768px - 1199px
-- **Mobile:** < 768px
+* **Desktop:** 1200px+
+* **Tablet:** 768px - 1199px
+* **Mobile:** < 768px
 
 Utiliza media queries y CSS Grid/Flexbox para adaptarse automáticamente.
 
 ## 🎓 Etiquetas HTML Semánticas Utilizadas
 
-- `<header>` - Encabezado con navegación
-- `<nav>` - Menú de navegación
-- `<main>` - Contenido principal
-- `<section>` - Secciones de contenido
-- `<article>` - Tarjetas de productos
-- `<aside>` - Barra lateral de categorías
-- `<footer>` - Pie de página
+* `<header>` - Encabezado con navegación
+* `<nav>` - Menú de navegación
+* `<main>` - Contenido principal
+* `<section>` - Secciones de contenido
+* `<article>` - Tarjetas de productos
+* `<aside>` - Barra lateral de categorías
+* `<footer>` - Pie de página
 
-## 🌐 Deployment
+## ⚙️ JavaScript - Funcionalidades (`js/script.js`)
 
-El sitio está publicado y accesible en:
+Todo el código JavaScript se ejecuta dentro del evento `DOMContentLoaded`, garantizando que el HTML esté completamente cargado antes de manipularlo. El archivo está organizado en los siguientes módulos:
 
-**URL:** https://cmg-motoparts.netlify.app/
-**Link video explicacion:** https://youtu.be/Nd0jih644CM
+### 🔗 Navegación y Scroll Suave
+Selecciona todos los enlaces con `href="#..."` y les aplica scroll animado hacia la sección destino. También detecta la posición del scroll para resaltar automáticamente el enlace activo en la barra de navegación (`.enlaces-nav a`).
 
-## 👥 Equipo de Desarrollo
+### 🔍 Búsqueda
+Captura el evento `keypress` en el input de `.caja-busqueda`. Al presionar `Enter`, recoge el término escrito para ser procesado (por ejemplo, redirigir al catálogo o filtrar productos).
 
-- Guillermo Sandoval Ricardo
-- Cristian Martinez Arias
-- Mario Aleman Salgado
+### 📂 Filtro por Categoría (Catálogo)
+Cada `.item-categoria` de la barra lateral escucha un clic. Al hacer clic en una categoría, se elimina la clase `activo` de todas las demás y se asigna solo a la seleccionada, cambiando su apariencia visual para indicar cuál está activa.
 
-**Institución:** Uniremington  
-**Materia:** Lenguaje de Programación II
-**Fecha:** Marzo 2026
+### 🔲 Alternar Vista Cuadrícula / Lista (Catálogo)
+Los botones `.boton-vista` permiten cambiar la presentación de los productos. La vista cuadrícula usa `repeat(auto-fill, minmax(280px, 1fr))` y la vista lista usa `1fr`, modificando dinámicamente el CSS del contenedor `.cuadricula-productos`.
 
-## 📞 Información de Contacto (CMG MotoParts)
+### 🛒 Agregar al Carrito (Catálogo)
+Al hacer clic en `.boton-agregar-carrito`, se incrementa el número de la `.insignia-carrito` visible en el header, se aplica un efecto de escala al botón como feedback visual, y se muestra una notificación de confirmación. Lee el nombre y precio del producto desde la `.tarjeta-producto-catalogo` más cercana.
 
-- **Teléfono:** +57 3128774844
-- **Email:** info@cmgmotoparts.com
-- **Dirección:** CL8 6A-194 La Unión, Sucre
+### 📊 Ordenar Productos (Catálogo)
+El `<select class="selector-ordenar">` escucha cambios y registra el criterio elegido (relevancia, precio menor a mayor, precio mayor a menor, más nuevos), listo para conectar con una lógica de reordenamiento de tarjetas.
+
+### 📬 Formulario de Contacto
+Al enviar el formulario (`id="formularioContacto"`), el script realiza lo siguiente:
+1. Valida que los campos requeridos (nombre, WhatsApp, mensaje) no estén vacíos.
+2. Verifica que el número de teléfono tenga un formato válido con una expresión regular.
+3. Construye un mensaje de texto personalizado con los datos ingresados.
+4. Abre WhatsApp Web con el número de la empresa (`+57 3128774844`) y el mensaje pre-llenado usando `https://wa.me/`.
+5. Muestra una notificación de éxito y limpia el formulario.
+
+### 📧 Boletín de Noticias (Newsletter)
+El botón `.boton-boletin` valida que el email ingresado en `.input-boletin` tenga un formato correcto mediante expresión regular. Si es válido, muestra una notificación de confirmación y limpia el campo.
+
+### 📄 Paginación (Catálogo)
+Los botones `.boton-pagina` gestionan cuál página está activa visualmente. Al hacer clic en uno, se desplaza suavemente al inicio de `.principal-catalogo` y se actualiza el estado `activo` del botón pulsado.
+
+### 🎴 Efecto Hover en Tarjetas de Producto
+Los eventos `mouseenter` y `mouseleave` en `.tarjeta-producto-catalogo` aplican y revierten un zoom (`scale(1.05)`) sobre la `.imagen-producto`, dando sensación de interactividad al pasar el cursor.
+
+### 🔔 Sistema de Notificaciones
+La función interna `mostrarNotificacion(mensaje, tipo)` crea dinámicamente un elemento flotante en la esquina superior derecha de la pantalla. Soporta dos tipos: `exito` (fondo rojo principal) y `error` (fondo rojo claro). La notificación desaparece automáticamente a los 3 segundos con una animación de salida.
+
+### ✨ Animaciones al Hacer Scroll
+Utiliza la API `IntersectionObserver` para detectar cuando las tarjetas `.tarjeta-caracteristica` y `.tarjeta-producto-catalogo` entran en el área visible del navegador, aplicándoles un efecto de aparición (fade + desplazamiento hacia arriba).
+
+### 🎞️ Animaciones CSS Dinámicas
+Al final del archivo se inyectan las keyframes `deslizarEntrada`, `deslizarSalida` y `aparecer` directamente en el `<head>` del documento, evitando la necesidad de definirlas en el archivo CSS y manteniendo las animaciones de las notificaciones autónomas dentro del JS.
+
+---
 
 ## 📝 Notas de Desarrollo
 
 ### Nomenclatura de Clases
 Todas las clases CSS están en **español** para mejor legibilidad:
-- `.barra-navegacion` - Barra de navegación
-- `.tarjeta-producto` - Tarjeta de producto
-- `.boton-primario` - Botón principal
-- `.cuadricula-productos` - Cuadrícula de productos
+* `.barra-navegacion` - Barra de navegación
+* `.tarjeta-producto` - Tarjeta de producto
+* `.boton-primario` - Botón principal
+* `.cuadricula-productos` - Cuadrícula de productos
 
 ### Organización CSS
 El archivo `styles.css` está organizado en secciones:
@@ -167,16 +198,40 @@ El archivo `styles.css` está organizado en secciones:
 
 ## 🔜 Próximas Funcionalidades (Actividad #3)
 
-- Funcionalidad JavaScript para carrito de compras
-- Filtros dinámicos de productos
-- Validación de formulario
-- Integración con WhatsApp
-- Animaciones interactivas
+* Funcionalidad JavaScript para carrito de compras
+* Filtros dinámicos de productos
+* Validación de formulario
+* Integración con WhatsApp
+* Animaciones interactivas
+
+## 🌐 Deployment
+
+El sitio está publicado y accesible en:
+
+**URL:** https://cmg-motoparts.netlify.app/
+**Link video explicacion:** https://youtu.be/Nd0jih644CM
+
+## 👥 Equipo de Desarrollo
+
+* Guillermo Sandoval Ricardo
+* Cristian Martinez Arias
+* Mario Aleman Salgado
+
+**Institución:** Uniremington  
+**Materia:** Lenguaje de Programción II  
+**Fecha:** Marzo 2026
+
+## 📞 Información de Contacto (CMG MotoParts)
+
+* **Teléfono:** +57 3128774844
+* **Email:** info@cmgmotoparts.com
+* **Dirección:** CL8 6A-194 La Unión, Sucre
 
 ## 📄 Licencia
 
 Este proyecto fue desarrollado con fines educativos.
 
 ---
+
 
 **© 2026 CMG MotoParts - Todos los derechos reservados**
