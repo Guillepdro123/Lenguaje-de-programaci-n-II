@@ -135,7 +135,7 @@ El sitio está publicado y accesible en:
 
 **Institución:** Uniremington  
 **Materia:** Lenguaje de Programación II
-**Fecha:** Febrero 2026
+**Fecha:** Marzo 2026
 
 ## 📞 Información de Contacto (CMG MotoParts)
 
